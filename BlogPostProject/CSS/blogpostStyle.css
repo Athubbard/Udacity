@@ -52,41 +52,7 @@ h5
     color: gray;
 }
 
-.container
-{
-        display: grid;
-        width: 100%;
-        grid-template-columns: 350px 250px;
-        grid-template-rows: 100px 955px;
-        grid-gap: 10px 100px;
-        grid-template-areas: 
-        "hd hd"
-        "lc rc";      
-}
 
-.header
-{
-    grid-area: hd;
-    display: flex;
-    gap: 200px; 
-    padding: 0;
-    align-items: center;   
-}
-
-.leftcolumn
-{
-    grid-area: lc;
-}
-
-.rightcolumn
-{
-    grid-area: rc;
-}
-
-.footer
-{
-    grid-area: ft;
-}
 
 .line-deco1
 {
@@ -111,36 +77,5 @@ h5
     background-color: #f2f2f2;  
 }
 
-@media(min-width: 1px) and (max-width:301px)
-{
-.container
-    {
-        display: grid;
-        width: 100%;
-        margin: auto;
-        grid-template-columns: 140px;
-        grid-template-rows: 100px 3550px;
-        grid-gap: 10px 100px;
-        grid-template-areas: 
-        "hd"
-        "lc" 
-        "rc"
-        "ft";        
-    }
-}  
 
-@media(min-width: 801px) and (max-width:1300px)
-{
-.container
-    {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 600px 800px 600px 800px 600px;
-        grid-template-rows: 100px 100px;  
-        margin: auto; 
-        grid-template-areas: 
-        "hd hd"
-        "lc lc  rc rc rc";  
-    } 
-}
 
