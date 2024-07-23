@@ -2,12 +2,13 @@
 {
     display: grid;
     width: 100%;
-    grid-template-columns: 350px 350px;
-    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 350px 350px 150px;
+    grid-template-rows: 200px 200px 200px 200px 100px;
     grid-gap: 25px 25px;   
-    margin: 20px;
+    margin: auto;
     grid-template-areas: 
     "hd hd"
+    "fb fb"
     "ml mr"
     "ml mr"
     "ft ft";      
@@ -17,6 +18,20 @@
 {
     grid-area: hd;
     gap: 150px;
+    
+}
+
+.figurebox
+{
+    grid-area: fb;
+    margin: auto;
+    align-content: center;
+ 
+}
+
+button 
+{
+    justify-content: center;
 }
 
 .mainleft
@@ -33,16 +48,17 @@
 {
     grid-area: ft;
 }
-@media(min-width: 1px) and (max-width:300px)
+@media(min-width: 1px) and (max-width:301px)
 {
 .container
     {
         display: grid;
         width: 100%;
         grid-template-columns: 250px;
-        grid-template-rows: 100px 200px 400px 350px;
+        grid-template-rows: 200px 400px 220px 200px;
         grid-template-areas: 
         "hd"
+        "fb"
         "ml"
         "ml" 
         "mr"
@@ -51,7 +67,7 @@
     }
 }  
 
-@media(min-width: 601px) and (max-width:1300px)
+@media(min-width: 801px) and (max-width:1300px)
 {
 .container
     {
@@ -63,6 +79,7 @@
         margin: auto;
         grid-template-areas: 
         "hd hd hd hd"
+        "fb fb fb fb"
         "ml ml mr mr"
         "ml ml mr mr"
         "ft ft ft ft";  
