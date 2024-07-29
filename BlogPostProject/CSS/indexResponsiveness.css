@@ -52,6 +52,11 @@ figcaption
     font-style: italic;
     text-align: center;
 }
+img
+{
+    max-width: 100%;
+    height: auto;
+}
 
 .mainleft
 {
@@ -77,6 +82,7 @@ figcaption
     {
         display: grid;
         width: 100vh;
+        padding: 10px;
         grid-template-columns: 250px;
         grid-template-rows: repeat(300px, 7);
         grid-template-areas: 
@@ -87,6 +93,10 @@ figcaption
         "mr"
         "mr"
         "ft";        
+    }
+    h1 
+    {
+        font-size: 7vw;
     }
 }  
 
